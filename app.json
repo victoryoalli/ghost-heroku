@@ -36,24 +36,24 @@
       "description": "Optional custom CDN asset host url, if using S3 file storage.",
       "required": false
     },
-    "SES_MAIL_FROM": {
+    "SMTP_MAIL_FROM": {
       "description": "Email from",
       "required": false
     },
-    "SES_MAIL_HOST": {
-      "description": "AWS SES mail host",
+    "SMTP_MAIL_HOST": {
+      "description": "SMTP mail host",
       "required": false
     },
-    "SES_MAIL_PORT": {
-      "description": "Set your AWS SES mail host",
+    "SMTP_MAIL_PORT": {
+      "description": "Set your SMTP mail host",
       "required": false
     },
-    "SES_MAIL_AUTH_USER": {
-      "description": "Set your AWS SES auth username",
+    "SMTP_MAIL_AUTH_USER": {
+      "description": "Set your SMTP auth username",
       "required": false
     },
-    "SES_MAIL_AUTH_PASS": {
-      "description": "Set your AWS SES auth password",
+    "SMTP_MAIL_AUTH_PASS": {
+      "description": "Set your SMTP auth password",
       "required": false
     }
   }

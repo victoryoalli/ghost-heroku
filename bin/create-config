@@ -40,17 +40,17 @@ function createConfig() {
     storage = {}
   }
 
-  if (!!process.env.SES_MAIL_AUTH_USER) {
+  if (!!process.env.SMTP_MAIL_AUTH_USER) {
     mail = {
-      from: process.env.SES_MAIL_FROM,
+      from: process.env.SMTP_MAIL_FROM,
       transport: 'SMTP',
       options: {
-        host: process.env.SES_MAIL_HOST,
-        port: process.env.SES_MAIL_PORT || 465,
-        service: "SES",
+        host: process.env.SMTP_MAIL_HOST,
+        port: process.env.SMTP_MAIL_PORT || 465,
+        service: "SMTP",
         auth: {
-          user: process.env.SES_MAIL_AUTH_USER,
-          pass: process.env.SES_MAIL_AUTH_PASS
+          user: process.env.SMTP_MAIL_AUTH_USER,
+          pass: process.env.SMTP_MAIL_AUTH_PASS
         }
       }
     }
