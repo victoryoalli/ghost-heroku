@@ -46,7 +46,7 @@ function createConfig() {
       transport: 'SMTP',
       options: {
         host: process.env.SES_MAIL_HOST,
-        port: 465,
+        port: process.env.SES_MAIL_PORT || 465,
         service: "SES",
         auth: {
           user: process.env.SES_MAIL_AUTH_USER,

@@ -41,15 +41,19 @@
       "required": false
     },
     "SES_MAIL_HOST": {
-      "description": "aws mail host",
+      "description": "AWS SES mail host",
+      "required": false
+    },
+    "SES_MAIL_PORT": {
+      "description": "Set your AWS SES mail host",
       "required": false
     },
     "SES_MAIL_AUTH_USER": {
-      "description": "aws mail username",
+      "description": "Set your AWS SES auth username",
       "required": false
     },
     "SES_MAIL_AUTH_PASS": {
-      "description": "aws mail password",
+      "description": "Set your AWS SES auth password",
       "required": false
     }
   }
